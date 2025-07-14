@@ -15,6 +15,7 @@ window.onload = function () {
   let cityValidation = document.getElementById("city");
   let stateValidation = document.getElementById("state");
   let postalCode = document.getElementById("postalCode");
+  let messagevalidation = document.getElementById("message-input")
 
   function checkInfo() {
     let hasError = false;
@@ -42,25 +43,28 @@ window.onload = function () {
       hasError = true;
     }
     if (lastNameValidation.value === "") {
-      lastNameValidation.style.backgroundColor = "pink";
+      lastNameValidation.style.backgroundColor = "#eacbcaff";
       lastNameValidation.style.borderColor = "red";
       hasError = true;
     }
     if (cityValidation.value === "") {
-      cityValidation.style.backgroundColor = "pink";
+      cityValidation.style.backgroundColor = "#eacbcaff";
       cityValidation.style.borderColor = "red";
       hasError = true;
     }
     if (stateValidation.value === "") {
-      stateValidation.style.backgroundColor = "pink";
+      stateValidation.style.backgroundColor = "#eacbcaff";
       stateValidation.style.borderColor = "red";
       hasError = true;
       if (postalCode.value === "") {
-        postalCode.style.backgroundColor = "pink";
+        postalCode.style.backgroundColor = "#eacbcaff";
         postalCode.style.borderColor = "red";
         hasError = true;
       }
-
+      if (messagevalidation.value === "") {
+        messagevalidation.style.backgroundColor = "#eacbcaff";
+        messagevalidation.style.borderColor = "red";
+      }
       if (hasError) {
         alerts.classList.remove("d-none");
       }
