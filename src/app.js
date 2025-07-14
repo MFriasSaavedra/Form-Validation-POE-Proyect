@@ -5,6 +5,7 @@ import "./style.css";
 
 
 window.onload = function () {
+
   let form = document.getElementById("form");
   let alerts = document.getElementById("alerts");
   let cardValidation = document.getElementById("cardNumber");
@@ -21,47 +22,47 @@ window.onload = function () {
     let hasError = false;
     alerts.classList.add("d-none");
 
-    if (cardValidation.value === "") {
+    if (cardValidation.value.trim() === "") {
       cardValidation.style.backgroundColor = "#eacbcaff";
       cardValidation.style.borderColor = "red"
       hasError = true;
     }
 
-    if (cvcValidation.value === "") {
+    if (cvcValidation.value.trim() === "") {
       cvcValidation.style.backgroundColor = "#eacbcaff";
       cvcValidation.style.borderColor = "red";
       hasError = true;
     }
-    if (amountValidation.value === "") {
+    if (amountValidation.value.trim() === "") {
       amountValidation.style.backgroundColor = "#eacbcaff";
       amountValidation.style.borderColor = "red";
       hasError = true;
     }
-    if (firstNameValidation.value === "") {
+    if (firstNameValidation.value.trim() === "") {
       firstNameValidation.style.backgroundColor = "#eacbcaff";
       firstNameValidation.style.borderColor = "red";
       hasError = true;
     }
-    if (lastNameValidation.value === "") {
+    if (lastNameValidation.value.trim() === "") {
       lastNameValidation.style.backgroundColor = "#eacbcaff";
       lastNameValidation.style.borderColor = "red";
       hasError = true;
     }
-    if (cityValidation.value === "") {
+    if (cityValidation.value.trim() === "") {
       cityValidation.style.backgroundColor = "#eacbcaff";
       cityValidation.style.borderColor = "red";
       hasError = true;
     }
-    if (stateValidation.value === "") {
+    if (stateValidation.value.trim() === "") {
       stateValidation.style.backgroundColor = "#eacbcaff";
       stateValidation.style.borderColor = "red";
       hasError = true;
-      if (postalCode.value === "") {
+      if (postalCode.value.trim() === "") {
         postalCode.style.backgroundColor = "#eacbcaff";
         postalCode.style.borderColor = "red";
         hasError = true;
       }
-      if (messagevalidation.value === "") {
+      if (messagevalidation.value.trim() === "") {
         messagevalidation.style.backgroundColor = "#eacbcaff";
         messagevalidation.style.borderColor = "red";
       }
